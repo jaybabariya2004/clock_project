@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <div id="message"></div>
+    <button onclick="load()">Stop</button>
+
+    <script>
+        setInterval(mytimer, 1000);
+        function mytimer(){
+            document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+            let quotes = "";
+            let minute = new Date().getMinutes();
+            if(minute == 36){
+                quotes = "Hello";
+            }else if(minute == 37){
+                quotes = "How are you!";
+            }else if(minute == 38){
+                quotes = "I am also fine";
+            }else if(minute == 39){
+                quotes = "okay";
+            }else if(minute == 40){
+                quotes = "In which school?";
+            }else if(minute == 41){
+                quotes = "Matseshvari International school";
+            }else if(minute == 42){
+                quotes = "and you ?";
+            }else if(minute == 43){
+                quotes = "I study in narmad nagar";
+            }else if(minute == 44){
+                quotes = "Okay Thank you";
+            }else if(minute == 45){
+                quotes = "Your most welcome";
+            }
+            document.getElementById("message").innerHTML=quotes;
+        }
+    </script>
+    
+</body>
+</html>
